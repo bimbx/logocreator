@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import {
   SignInButton,
@@ -17,15 +16,10 @@ export default function Header({ className }: { className: string }) {
       <div className="flex items-center justify-between bg-[#343434] px-4 py-2 md:mt-4">
         {/* Logo - left on mobile, centered on larger screens */}
         <div className="flex flex-grow justify-start xl:justify-center">
-          <Link href="https://togetherai.link/" className="flex items-center">
-            <Image
-              src="together-ai-logo1.svg"
-              alt="together.ai"
-              width={400}
-              height={120}
-              className="w-[220px] md:w-[330px] lg:w-[390px]"
-              priority
-            />
+          <Link href="/" className="flex items-center">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+              Hardbox AI
+            </h1>
           </Link>
         </div>
         {/* Credits Section */}
